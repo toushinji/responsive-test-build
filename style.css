@@ -12,29 +12,34 @@ html{
 
 .grid{
   display: grid; 
-  grid-gap: 20px;
+  grid-gap: 15px;
+  max-width: 960px;
+  width: 100%;
+  margin: 30px auto ;
   text-transform: uppercase;
   grid-template-columns: repeat(2, 1fr);
 }
 
-p{
-  text-shadow: 1px 1px #4b4d76;
-}
+
 
 .box{
   display: flex;
   align-items: center;
-  padding-left: 20px; 
+  text-align: center;
   outline: 1px solid black;
   min-height: 200px;
 }
 
+.box p{
+  text-shadow: 1px 1px #000;
+  width: 100%;
+}
 /* left grid */
 .grid-container-left{
   text-align: center;
   color: white;
   display: grid;
-  grid-gap: 16px; 
+  grid-gap: 15px; 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: 
@@ -67,7 +72,7 @@ p{
 .grid-container-right{
   color: white;
   display: grid;
-  grid-gap: 16px; 
+  grid-gap: 15px; 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: 
@@ -96,6 +101,19 @@ p{
   background-color: #fca858;
 }
 
+/* footer */
+
+footer{
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #eaeaeb;
+}
+
+footer p{
+  height: 70px;
+  text-decoration: none;
+}
 /* nav & menu css */
 
 .nav{
@@ -104,7 +122,6 @@ p{
   height: 70px;
   position: relative;
   top: -20px;
-  
 }
 
 .menu {
@@ -124,7 +141,6 @@ p{
   line-height: 70px;
   border-radius: 5px;
 }
-
 
 .menu a:hover{
   background: rgba(228, 219, 208, 0.5);
@@ -146,6 +162,17 @@ label{
 }
 
 /* media queries */
+
+@media screen and (max-width:640px){
+  .menu a{
+    clear: right;
+    text-decoration: none;
+    margin: 5px 5px;
+    padding: 10px 5px;
+    line-height: 70px;
+    border-radius: 5px;
+  }
+}
 
 @media screen and (max-width:600px){
 
