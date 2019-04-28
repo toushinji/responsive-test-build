@@ -5,8 +5,9 @@
 }
 
 html{
+  margin: 0px 20px;
+  font-size: 1rem;  
   background-color: honeydew;
-  margin: 30px 50px ;      
   font-family: "helvetica neue" sans-serif;    
 }
 
@@ -20,8 +21,6 @@ html{
   grid-template-columns: repeat(2, 1fr);
 }
 
-
-
 .box{
   display: flex;
   align-items: center;
@@ -34,6 +33,7 @@ html{
   text-shadow: 1px 1px #000;
   width: 100%;
 }
+
 /* left grid */
 .grid-container-left{
   text-align: center;
@@ -164,6 +164,7 @@ label{
 /* media queries */
 
 @media screen and (max-width:640px){
+
   .menu a{
     clear: right;
     text-decoration: none;
@@ -171,6 +172,10 @@ label{
     padding: 10px 5px;
     line-height: 70px;
     border-radius: 5px;
+  }
+
+  html{
+    margin: 0px 20px;   
   }
 }
 
@@ -214,5 +219,9 @@ label{
 
   #toggle:checked + .menu{
     display: block;
+  }
+
+  html{
+    margin: 0px 20px;  
   }
 }
