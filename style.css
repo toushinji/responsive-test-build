@@ -18,13 +18,14 @@ html{
   border-bottom: 1px solid #eaeaeb;
   text-align: right;
   height: 70px;
-  position: relative;
-  top: -20px;
+  /* position: relative;
+  top: -20px; */
+  background-color: lavender;
 }
 
 .menu {
-  position: absolute; 
-  top: 0px;
+  /* position: absolute; 
+  top: 0px; */
   z-index: auto;
   width: 100%;
   text-align: center;  
@@ -205,8 +206,8 @@ footer p{
     width: 100%;
     display: none;
     background: rgba(151, 143, 143, 0.5);
-    position: absolute;
-    top: 70px;
+    /* position: absolute;
+    top: 70px; */
   }
 
   .menu a{
